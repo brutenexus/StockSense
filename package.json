@@ -1,0 +1,39 @@
+{
+  "name": "stocksense",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StockSense — a modular, real-time Inventory Management System (IMS) for receipts, deliveries, internal transfers, adjustments and a full stock ledger.",
+  "scripts": {
+    "dev": "next dev --port 3100",
+    "build": "next build",
+    "start": "next start --port 3100",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:reset": "tsx src/lib/db/cli.ts reset",
+    "db:seed": "tsx src/lib/db/cli.ts seed",
+    "db:migrate": "tsx src/lib/db/cli.ts migrate",
+    "setup": "node scripts/setup.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.48.0",
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.2"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

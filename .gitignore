@@ -1,0 +1,24 @@
+node_modules
+.next
+out
+build
+dist
+coverage
+
+# local database + generated artifacts
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.sqlite
+
+# env
+.env
+.env*.local
+
+# misc
+*.log
+.DS_Store
+Thumbs.db
+next-env.d.ts
+tsconfig.tsbuildinfo
+.preview
